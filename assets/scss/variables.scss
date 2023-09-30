@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
-$theme__font: 'League Spartan', sans-serif;
-$theme__size: 16px;
-$white: hsl(0, 0%, 100%);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+$theme__font: 'Inter', sans-serif;
+$theme__size: 15px;
+$soft-orange: hsl(35, 77%, 62%);
+$soft-red: hsl(5, 85%, 63%);
+$off-white: hsl(36, 100%, 99%);
+$grayish-blue: hsl(233, 8%, 79%);
+$dark-grayish-blue: hsl(236, 13%, 42%);
+$very-dark-blue: hsl(240, 100%, 5%);
 
 @mixin d-flex {
     display: flex;
