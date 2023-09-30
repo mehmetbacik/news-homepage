@@ -8,6 +8,7 @@
         <meta name="author" content="MBCK">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/src/swiper/swiper-bundle.min.css" rel="stylesheet">
         <link href="/assets/css/styles.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="/assets/img/favicon-32x32.png">
     </head>
@@ -43,8 +44,87 @@
                 </div>
             </nav>
         </header>
-        <main></main>
+        <main>
+            <section class="main__topStories">
+                <div class="topStories-content-headline">
+                    <div class="content-slide">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="/assets/img/image-web-3-desktop.jpg" alt="Stories Image"></div>
+                                <div class="swiper-slide"><img src="/assets/img/image-web-3-desktop.jpg" alt="Stories Image"></div>
+                                <div class="swiper-slide"><img src="/assets/img/image-web-3-desktop.jpg" alt="Stories Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <div class="title">
+                            <span>The Bright Future of Web 3.0?</span>
+                        </div>
+                        <div class="description">
+                            <p>
+                                We dive into the next evolution of the web that 
+                                claims to put the power of the platforms back 
+                                into the hands of the people. 
+                                But is it really fulfilling its promise?
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topStories-content-newsbar">
+                    <div class="newsbar-headline">
+                        <h1>New</h1>
+                    </div>
+                    <div class="newsbar-item">
+                        <span>Hydrogen VS Electric Cars</span>
+                        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </div>
+                    <div class="newsbar-item">
+                        <span>The Downsides of AI Artistry</span>
+                        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                    </div>
+                    <div class="newsbar-item">
+                        <span>Is VC Funding Drying Up?</span>
+                        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="main__currentNews">
+                <div class="currentNews-content-child">
+                    <div class="content-image">
+                        <img src="/assets/img/image-retro-pcs.jpg" alt="Current News 1">
+                    </div>
+                    <div class="content-text">
+                        <span>01</span>
+                        <h2>Reviving Retro PCs</h2>
+                        <p>What happens when old PCs are given modern upgrades?</p>
+                    </div>
+                </div>
+                <div class="currentNews-content-child">
+                    <div class="content-image">
+                        <img src="/assets/img/image-top-laptops.jpg" alt="Current News 2">
+                    </div>
+                    <div class="content-text">
+                        <span>02</span>
+                        <h2>Top 10 Laptops of 2022</h2>
+                        <p>Our best picks for various needs and budgets.</p>
+                    </div>
+                </div>
+                <div class="currentNews-content-child">
+                    <div class="content-image">
+                        <img src="/assets/img/image-gaming-growth.jpg" alt="Current News 3">
+                    </div>
+                    <div class="content-text">
+                        <span>03</span>
+                        <h2>The Growth of Gaming</h2>
+                        <p>How the pandemic has sparked fresh opportunities.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer></footer>
+        <script src="/src/swiper/swiper-bundle.min.js"></script>
+        <script src="/assets/js/script.js"></script>
         <script src="/src/bootstrap/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
