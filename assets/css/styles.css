@@ -13,7 +13,7 @@ html body {
 }
 
 #news__page header .navbar {
-  margin-top: 50px;
+  margin-top: 65px;
   margin-bottom: 40px;
 }
 #news__page header .navbar #navbarNav {
@@ -28,4 +28,32 @@ html body {
 }
 #news__page header .navbar #navbarNav .navbar-nav .nav-item .nav-link:hover {
   color: hsl(5, 85%, 63%);
+}
+#news__page main .main__topStories {
+  margin-bottom: 50px;
+}
+#news__page main .main__topStories .topStories-content-headline .content-slide {
+  margin-bottom: 30px;
+}
+#news__page main .main__topStories .topStories-content-headline .content-slide .storiesSwiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+#news__page main .main__topStories .topStories-content-headline .content-text {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+#news__page main .main__topStories .topStories-content-headline .content-text .title {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 700;
+}
+#news__page main .main__topStories .topStories-content-newsbar .newsbar-items {
+  background-color: hsl(240, 100%, 5%);
+  height: 100%;
+}
+#news__page main .main__currentNews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=styles.css.map */

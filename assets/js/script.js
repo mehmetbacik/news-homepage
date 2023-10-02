@@ -1,4 +1,4 @@
-var swiper = new Swiper('.mySwiper', {
+var swiper = new Swiper('.storiesSwiper', {
     /*navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

@@ -15,7 +15,7 @@ html {
 #news__page {
     header {
         .navbar {
-            margin-top: 50px;
+            margin-top: 65px;
             margin-bottom: 40px;
             #navbarNav {
                 justify-content: flex-end;
@@ -32,6 +32,47 @@ html {
                     }
                 }
             }
+        }
+    }
+    main {
+        .main__topStories {
+            margin-bottom: 50px;
+            .topStories-content-headline {
+                .content-slide {
+                    margin-bottom: 30px;
+                    .storiesSwiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .content-text {
+                    @include d-flex;
+                    gap: 60px;
+                    .title {
+                        font-size: 50px;
+                        line-height: 1;
+                        font-weight: 700;
+                    }
+                    .descripttion {
+
+                    }
+                }
+            }
+            .topStories-content-newsbar {
+                .newsbar-items {
+                    background-color: $very-dark-blue;
+                    height: 100%;
+                }
+            }
+        }
+        .main__currentNews {
+            @include d-flex;
+            justify-content: space-between;
         }
     }
 }
