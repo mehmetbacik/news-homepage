@@ -11,3 +11,27 @@ html {
         padding: 0;
     }
 }
+
+#news__page {
+    header {
+        .navbar {
+            margin-top: 50px;
+            margin-bottom: 40px;
+            #navbarNav {
+                justify-content: flex-end;
+                .navbar-nav {
+                    gap: 20px;
+                    .nav-item {
+                        .nav-link {
+                            color: $dark-grayish-blue;
+                            font-weight: 500;
+                            &:hover {
+                                color: $soft-red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

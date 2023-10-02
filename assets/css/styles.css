@@ -10,4 +10,22 @@ html body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+}
+
+#news__page header .navbar {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+#news__page header .navbar #navbarNav {
+  justify-content: flex-end;
+}
+#news__page header .navbar #navbarNav .navbar-nav {
+  gap: 20px;
+}
+#news__page header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
+  color: hsl(236, 13%, 42%);
+  font-weight: 500;
+}
+#news__page header .navbar #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: hsl(5, 85%, 63%);
 }/*# sourceMappingURL=styles.css.map */

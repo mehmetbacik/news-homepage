@@ -14,16 +14,16 @@
     </head>
     <body id="news__page">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="#">
                         <img src="/assets/img/logo.svg" alt="Logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">Home</a>
                             </li>
@@ -45,82 +45,86 @@
             </nav>
         </header>
         <main>
-            <section class="main__topStories">
-                <div class="topStories-content-headline">
-                    <div class="content-slide">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="/assets/img/image-web-3-desktop.jpg" alt="Stories Image"></div>
-                                <div class="swiper-slide"><img src="/assets/img/image-web-3-desktop.jpg" alt="Stories Image"></div>
-                                <div class="swiper-slide"><img src="/assets/img/image-web-3-desktop.jpg" alt="Stories Image"></div>
+            <div class="container">
+                <section class="main__topStories">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 topStories-content-headline">
+                            <div class="content-slide">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="/assets/img/image-web-3-desktop.jpg" alt="Stories Image"></div>
+                                        <div class="swiper-slide"><img src="/assets/img/image-web-3-desktop.jpg" alt="Stories Image"></div>
+                                        <div class="swiper-slide"><img src="/assets/img/image-web-3-desktop.jpg" alt="Stories Image"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-text">
+                                <div class="title">
+                                    <span>The Bright Future of Web 3.0?</span>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        We dive into the next evolution of the web that 
+                                        claims to put the power of the platforms back 
+                                        into the hands of the people. 
+                                        But is it really fulfilling its promise?
+                                    </p>
+                                    <a href="#">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 topStories-content-newsbar">
+                            <div class="newsbar-headline">
+                                <h1>New</h1>
+                            </div>
+                            <div class="newsbar-item">
+                                <span>Hydrogen VS Electric Cars</span>
+                                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                            </div>
+                            <div class="newsbar-item">
+                                <span>The Downsides of AI Artistry</span>
+                                <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                            </div>
+                            <div class="newsbar-item">
+                                <span>Is VC Funding Drying Up?</span>
+                                <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="content-text">
-                        <div class="title">
-                            <span>The Bright Future of Web 3.0?</span>
+                </section>
+                <section class="main__currentNews">
+                    <div class="currentNews-content-child">
+                        <div class="content-image">
+                            <img src="/assets/img/image-retro-pcs.jpg" alt="Current News 1">
                         </div>
-                        <div class="description">
-                            <p>
-                                We dive into the next evolution of the web that 
-                                claims to put the power of the platforms back 
-                                into the hands of the people. 
-                                But is it really fulfilling its promise?
-                            </p>
-                            <a href="#">Read more</a>
+                        <div class="content-text">
+                            <span>01</span>
+                            <h2>Reviving Retro PCs</h2>
+                            <p>What happens when old PCs are given modern upgrades?</p>
                         </div>
                     </div>
-                </div>
-                <div class="topStories-content-newsbar">
-                    <div class="newsbar-headline">
-                        <h1>New</h1>
+                    <div class="currentNews-content-child">
+                        <div class="content-image">
+                            <img src="/assets/img/image-top-laptops.jpg" alt="Current News 2">
+                        </div>
+                        <div class="content-text">
+                            <span>02</span>
+                            <h2>Top 10 Laptops of 2022</h2>
+                            <p>Our best picks for various needs and budgets.</p>
+                        </div>
                     </div>
-                    <div class="newsbar-item">
-                        <span>Hydrogen VS Electric Cars</span>
-                        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    <div class="currentNews-content-child">
+                        <div class="content-image">
+                            <img src="/assets/img/image-gaming-growth.jpg" alt="Current News 3">
+                        </div>
+                        <div class="content-text">
+                            <span>03</span>
+                            <h2>The Growth of Gaming</h2>
+                            <p>How the pandemic has sparked fresh opportunities.</p>
+                        </div>
                     </div>
-                    <div class="newsbar-item">
-                        <span>The Downsides of AI Artistry</span>
-                        <p>What are the possible adverse effects of on-demand AI image generation?</p>
-                    </div>
-                    <div class="newsbar-item">
-                        <span>Is VC Funding Drying Up?</span>
-                        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="main__currentNews">
-                <div class="currentNews-content-child">
-                    <div class="content-image">
-                        <img src="/assets/img/image-retro-pcs.jpg" alt="Current News 1">
-                    </div>
-                    <div class="content-text">
-                        <span>01</span>
-                        <h2>Reviving Retro PCs</h2>
-                        <p>What happens when old PCs are given modern upgrades?</p>
-                    </div>
-                </div>
-                <div class="currentNews-content-child">
-                    <div class="content-image">
-                        <img src="/assets/img/image-top-laptops.jpg" alt="Current News 2">
-                    </div>
-                    <div class="content-text">
-                        <span>02</span>
-                        <h2>Top 10 Laptops of 2022</h2>
-                        <p>Our best picks for various needs and budgets.</p>
-                    </div>
-                </div>
-                <div class="currentNews-content-child">
-                    <div class="content-image">
-                        <img src="/assets/img/image-gaming-growth.jpg" alt="Current News 3">
-                    </div>
-                    <div class="content-text">
-                        <span>03</span>
-                        <h2>The Growth of Gaming</h2>
-                        <p>How the pandemic has sparked fresh opportunities.</p>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
         <footer></footer>
         <script src="/src/swiper/swiper-bundle.min.js"></script>
