@@ -65,16 +65,20 @@ html {
                             padding-bottom: 25px;
                         }
                         a {
-                            background-color: $soft-red;
-                            color: $off-white;
-                            text-decoration: none;
-                            text-transform: uppercase;
-                            padding: 14px 30px;
-                            letter-spacing: 4px;
-                            font-weight: 700;
-                            font-size: 13px;
-                            &:hover {
-                                background-color: $very-dark-blue;
+                            button {
+                                background-color: $soft-red;
+                                color: $off-white;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                padding: 14px 30px;
+                                letter-spacing: 4px;
+                                font-weight: 700;
+                                font-size: 13px;
+                                border: none;
+                                outline: none;
+                                &:hover {
+                                    background-color: $very-dark-blue;
+                                }
                             }
                         }
                     }
@@ -90,18 +94,31 @@ html {
                         h1 {
                             color: $soft-orange;
                             font-weight: 700;
+                            margin-top: 10px;
                         }
                     }
                     .newsbar-item {
                         @include d-flex;
                         flex-direction: column;
-                        gap: 67px;
                         .newsbar-item-content {
                             span {
                                 color: $off-white;
+                                font-weight: 700;
+                                font-size: 20px;
                             }
                             p {
                                 color: $grayish-blue;
+                                margin-top: 8px;
+                                margin-bottom: 25px;
+                                border-bottom: solid 1px $dark-grayish-blue;
+                                padding-bottom: 25px;
+                            }
+                            &:last-child {
+                                p {
+                                    border-bottom: none;
+                                    margin-bottom: 0;
+                                    padding-bottom: 0;
+                                }
                             }
                         }
                     }

@@ -55,7 +55,7 @@ html body {
 #news__page main .main__topStories .topStories-content-headline .content-text .description p {
   padding-bottom: 25px;
 }
-#news__page main .main__topStories .topStories-content-headline .content-text .description a {
+#news__page main .main__topStories .topStories-content-headline .content-text .description a button {
   background-color: hsl(5, 85%, 63%);
   color: hsl(36, 100%, 99%);
   text-decoration: none;
@@ -64,8 +64,10 @@ html body {
   letter-spacing: 4px;
   font-weight: 700;
   font-size: 13px;
+  border: none;
+  outline: none;
 }
-#news__page main .main__topStories .topStories-content-headline .content-text .description a:hover {
+#news__page main .main__topStories .topStories-content-headline .content-text .description a button:hover {
   background-color: hsl(240, 100%, 5%);
 }
 #news__page main .main__topStories .topStories-content-newsbar .newsbar-items {
@@ -79,18 +81,29 @@ html body {
 #news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-headline h1 {
   color: hsl(35, 77%, 62%);
   font-weight: 700;
+  margin-top: 10px;
 }
 #news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-item {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 67px;
 }
 #news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-item .newsbar-item-content span {
   color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  font-size: 20px;
 }
 #news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-item .newsbar-item-content p {
   color: hsl(233, 8%, 79%);
+  margin-top: 8px;
+  margin-bottom: 25px;
+  border-bottom: solid 1px hsl(236, 13%, 42%);
+  padding-bottom: 25px;
+}
+#news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-item .newsbar-item-content:last-child p {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 #news__page main .main__currentNews {
   display: flex;
