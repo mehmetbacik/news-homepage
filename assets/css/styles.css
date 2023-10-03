@@ -41,16 +41,56 @@ html body {
 #news__page main .main__topStories .topStories-content-headline .content-text {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 50px;
 }
 #news__page main .main__topStories .topStories-content-headline .content-text .title {
-  font-size: 50px;
+  font-size: 55px;
   line-height: 1;
   font-weight: 700;
+  flex-basis: 100%;
+}
+#news__page main .main__topStories .topStories-content-headline .content-text .description {
+  flex-basis: 100%;
+}
+#news__page main .main__topStories .topStories-content-headline .content-text .description p {
+  padding-bottom: 25px;
+}
+#news__page main .main__topStories .topStories-content-headline .content-text .description a {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  font-size: 13px;
+}
+#news__page main .main__topStories .topStories-content-headline .content-text .description a:hover {
+  background-color: hsl(240, 100%, 5%);
 }
 #news__page main .main__topStories .topStories-content-newsbar .newsbar-items {
   background-color: hsl(240, 100%, 5%);
   height: 100%;
+  padding: 25px;
+}
+#news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-headline {
+  margin-bottom: 20px;
+}
+#news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-headline h1 {
+  color: hsl(35, 77%, 62%);
+  font-weight: 700;
+}
+#news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 67px;
+}
+#news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-item .newsbar-item-content span {
+  color: hsl(36, 100%, 99%);
+}
+#news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-item .newsbar-item-content p {
+  color: hsl(233, 8%, 79%);
 }
 #news__page main .main__currentNews {
   display: flex;

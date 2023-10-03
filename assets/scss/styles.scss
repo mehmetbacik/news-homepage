@@ -52,14 +52,31 @@ html {
                 }
                 .content-text {
                     @include d-flex;
-                    gap: 60px;
+                    gap: 50px;
                     .title {
-                        font-size: 50px;
+                        font-size: 55px;
                         line-height: 1;
                         font-weight: 700;
+                        flex-basis: 100%;
                     }
-                    .descripttion {
-
+                    .description {
+                        flex-basis: 100%;
+                        p {
+                            padding-bottom: 25px;
+                        }
+                        a {
+                            background-color: $soft-red;
+                            color: $off-white;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            padding: 14px 30px;
+                            letter-spacing: 4px;
+                            font-weight: 700;
+                            font-size: 13px;
+                            &:hover {
+                                background-color: $very-dark-blue;
+                            }
+                        }
                     }
                 }
             }
@@ -67,6 +84,27 @@ html {
                 .newsbar-items {
                     background-color: $very-dark-blue;
                     height: 100%;
+                    padding: 25px;
+                    .newsbar-headline {
+                        margin-bottom: 20px;
+                        h1 {
+                            color: $soft-orange;
+                            font-weight: 700;
+                        }
+                    }
+                    .newsbar-item {
+                        @include d-flex;
+                        flex-direction: column;
+                        gap: 67px;
+                        .newsbar-item-content {
+                            span {
+                                color: $off-white;
+                            }
+                            p {
+                                color: $grayish-blue;
+                            }
+                        }
+                    }
                 }
             }
         }
