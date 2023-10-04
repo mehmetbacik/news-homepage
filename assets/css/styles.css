@@ -53,7 +53,7 @@ html body {
   flex-basis: 100%;
 }
 #news__page main .main__topStories .topStories-content-headline .content-text .description p {
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 #news__page main .main__topStories .topStories-content-headline .content-text .description a button {
   background-color: hsl(5, 85%, 63%);
@@ -92,6 +92,10 @@ html body {
   font-weight: 700;
   font-size: 20px;
 }
+#news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-item .newsbar-item-content span:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
 #news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-item .newsbar-item-content p {
   color: hsl(233, 8%, 79%);
   margin-top: 8px;
@@ -110,35 +114,35 @@ html body {
   justify-content: space-between;
   gap: 50px;
 }
-#news__page main .main__currentNews .currentNews-content-child {
+#news__page main .main__currentNews .currentNews-content-child a {
   display: flex;
   align-items: center;
   gap: 20px;
+  text-decoration: none;
 }
-#news__page main .main__currentNews .currentNews-content-child .content-image {
-  width: 25%;
-}
-#news__page main .main__currentNews .currentNews-content-child .content-image img {
+#news__page main .main__currentNews .currentNews-content-child a .content-image img {
   width: 100px;
   height: 127px;
 }
-#news__page main .main__currentNews .currentNews-content-child .content-text {
+#news__page main .main__currentNews .currentNews-content-child a .content-text {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 75%;
+  gap: 5px;
 }
-#news__page main .main__currentNews .currentNews-content-child .content-text span {
+#news__page main .main__currentNews .currentNews-content-child a .content-text span {
   color: hsl(233, 8%, 79%);
   font-weight: 700;
   font-size: 30px;
 }
-#news__page main .main__currentNews .currentNews-content-child .content-text h2 {
+#news__page main .main__currentNews .currentNews-content-child a .content-text h2 {
   color: hsl(240, 100%, 5%);
   font-size: 18px;
   font-weight: 700;
 }
-#news__page main .main__currentNews .currentNews-content-child .content-text p {
+#news__page main .main__currentNews .currentNews-content-child a .content-text h2:hover {
+  color: hsl(5, 85%, 63%);
+}
+#news__page main .main__currentNews .currentNews-content-child a .content-text p {
   color: hsl(236, 13%, 42%);
   margin-bottom: 0;
 }

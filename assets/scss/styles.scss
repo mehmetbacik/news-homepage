@@ -62,7 +62,7 @@ html {
                     .description {
                         flex-basis: 100%;
                         p {
-                            padding-bottom: 25px;
+                            padding-bottom: 15px;
                         }
                         a {
                             button {
@@ -105,6 +105,10 @@ html {
                                 color: $off-white;
                                 font-weight: 700;
                                 font-size: 20px;
+                                &:hover {
+                                    color: $soft-orange;
+                                    cursor: pointer;
+                                }
                             }
                             p {
                                 color: $grayish-blue;
@@ -130,33 +134,37 @@ html {
             justify-content: space-between;
             gap: 50px;
             .currentNews-content-child {
-                @include d-flex;
-                gap: 20px;
-                .content-image {
-                    width: 25%;
-                    img {
-                        width: 100px;
-                        height: 127px;
+                a {
+                    @include d-flex;
+                    gap: 20px;
+                    text-decoration: none;
+                    .content-image {
+                        img {
+                            width: 100px;
+                            height: 127px;
+                        }
                     }
-                }
-                .content-text {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 8px;
-                    width: 75%;
-                    span {
-                        color: $grayish-blue;
-                        font-weight: 700;
-                        font-size: 30px;
-                    }
-                    h2 {
-                        color: $very-dark-blue;
-                        font-size: 18px;
-                        font-weight: 700;
-                    }
-                    p {
-                        color: $dark-grayish-blue;
-                        margin-bottom: 0;
+                    .content-text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        span {
+                            color: $grayish-blue;
+                            font-weight: 700;
+                            font-size: 30px;
+                        }
+                        h2 {
+                            color: $very-dark-blue;
+                            font-size: 18px;
+                            font-weight: 700;
+                            &:hover {
+                                color: $soft-red;
+                            }
+                        }
+                        p {
+                            color: $dark-grayish-blue;
+                            margin-bottom: 0;
+                        }
                     }
                 }
             }
