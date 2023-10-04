@@ -128,19 +128,36 @@ html {
         .main__currentNews {
             @include d-flex;
             justify-content: space-between;
-            gap: 30px;
+            gap: 50px;
             .currentNews-content-child {
                 @include d-flex;
                 gap: 20px;
                 .content-image {
                     width: 25%;
                     img {
-                        width: 104px;
-                        height: 130px;
+                        width: 100px;
+                        height: 127px;
                     }
                 }
                 .content-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
                     width: 75%;
+                    span {
+                        color: $grayish-blue;
+                        font-weight: 700;
+                        font-size: 30px;
+                    }
+                    h2 {
+                        color: $very-dark-blue;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                    p {
+                        color: $dark-grayish-blue;
+                        margin-bottom: 0;
+                    }
                 }
             }
         }
