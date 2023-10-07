@@ -197,10 +197,28 @@ html {
             }
         }
     }
+
+    br {
+        &.xlarge {
+            display: block;
+        }
+        &.large {
+            display: block;
+        }
+        &.medium {
+            display: none;
+        }
+        &.small {
+            display: none;
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
     br {
+        &.xlarge {
+            display: block;
+        }
         &.large {
             display: block;
         }
@@ -214,7 +232,54 @@ html {
 }
 
 @media screen and (min-width: 992px) and (max-width:1199px) {
+    #news__page {
+        main {
+            .main__topStories {
+                .topStories-content-newsbar {
+                    .newsbar-items {
+                        .newsbar-headline {
+                            h1 {
+                                font-size: 30px;
+                            }
+                        }
+                        .newsbar-item {
+                            .newsbar-item-content {
+                                span {
+                                    font-size: 16px;
+                                }
+                                p {
+                                    margin-bottom: 20px;
+                                    padding-bottom: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main__currentNews {
+                .currentNews-content-child {
+                    a {
+                        .content-text {
+                            span {
+                                font-size: 25px;
+                            }
+                            h2 {
+                                font-size: 16px;
+                            }
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     br {
+        &.xlarge {
+            display: none;
+        }
         &.large {
             display: block;
         }
@@ -229,6 +294,9 @@ html {
 
 @media screen and (min-width: 768px) and (max-width:991px) {
     br {
+        &.xlarge {
+            display: none;
+        }
         &.large {
             display: none;
         }
@@ -243,6 +311,9 @@ html {
 
 @media (max-width: 767px) {
     br {
+        &.xlarge {
+            display: none;
+        }
         &.large {
             display: none;
         }
