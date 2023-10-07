@@ -219,6 +219,42 @@ html body {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  #news__page header .navbar {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  #news__page header .navbar .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  #news__page header .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  #news__page header .navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url(/assets/img/icon-menu.svg);
+  }
+  #news__page header .navbar #navbarNav {
+    justify-content: flex-end;
+  }
+  #news__page header .navbar #navbarNav .navbar-nav {
+    gap: 20px;
+  }
+  #news__page header .navbar #navbarNav .navbar-nav .nav-item .nav-link {
+    color: hsl(236, 13%, 42%);
+    font-weight: 500;
+  }
+  #news__page header .navbar #navbarNav .navbar-nav .nav-item .nav-link:hover {
+    color: hsl(5, 85%, 63%);
+  }
+  #news__page main .main__topStories .topStories-content-headline .content-text {
+    margin-bottom: 30px;
+  }
+  #news__page main .main__currentNews {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 50px;
+  }
   br.xlarge {
     display: none;
   }
