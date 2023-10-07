@@ -6,7 +6,7 @@ html {
     padding: 0;
     body {
         @include font;
-        min-height: 100vh;
+        max-height: 100vh;
         margin: 0;
         padding: 0;
     }
@@ -15,8 +15,8 @@ html {
 #news__page {
     header {
         .navbar {
-            margin-top: 65px;
-            margin-bottom: 40px;
+            margin-top: 55px;
+            margin-bottom: 30px;
             #navbarNav {
                 justify-content: flex-end;
                 .navbar-nav {
@@ -132,7 +132,7 @@ html {
         .main__currentNews {
             @include d-flex;
             justify-content: space-between;
-            gap: 50px;
+            gap: 20px;
             .currentNews-content-child {
                 a {
                     @include d-flex;
@@ -164,6 +164,33 @@ html {
                         p {
                             color: $dark-grayish-blue;
                             margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #news__page {
+        main {
+            .main__topStories {
+                .topStories-content-newsbar {
+                    .newsbar-items {
+                        .newsbar-headline {
+                            margin-bottom: 30px;
+                            h1 {
+                                margin-top: 15px;
+                            }
+                        }
+                        .newsbar-item {
+                            .newsbar-item-content {
+                                p {
+                                    margin-bottom: 35px;
+                                    padding-bottom: 35px;
+                                }
+                            }
                         }
                     }
                 }

@@ -7,14 +7,14 @@ html {
 html body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
-  min-height: 100vh;
+  max-height: 100vh;
   margin: 0;
   padding: 0;
 }
 
 #news__page header .navbar {
-  margin-top: 65px;
-  margin-bottom: 40px;
+  margin-top: 55px;
+  margin-bottom: 30px;
 }
 #news__page header .navbar #navbarNav {
   justify-content: flex-end;
@@ -112,7 +112,7 @@ html body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 20px;
 }
 #news__page main .main__currentNews .currentNews-content-child a {
   display: flex;
@@ -147,6 +147,18 @@ html body {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 1400px) {
+  #news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-headline {
+    margin-bottom: 30px;
+  }
+  #news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-headline h1 {
+    margin-top: 15px;
+  }
+  #news__page main .main__topStories .topStories-content-newsbar .newsbar-items .newsbar-item .newsbar-item-content p {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+  }
+}
 @media screen and (min-width: 1200px) {
   br.large {
     display: block;
