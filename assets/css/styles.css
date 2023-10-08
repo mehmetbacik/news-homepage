@@ -349,4 +349,28 @@ html body {
   #news__page main .main__currentNews .currentNews-content-child a .content-text p {
     font-size: 12px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+/*DevNot: Check - Menu*/
+@media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    z-index: 2;
+    background-color: hsl(36, 100%, 99%);
+    top: 54px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  .navbar-collapse.collapsing {
+    height: auto;
+    transition: left 0.3s ease;
+    left: -100%;
+  }
+  .navbar-collapse.show {
+    left: 0;
+    transition: left 0.3s ease-in;
+  }
+}
+/*DevNot: Check - Menu*//*# sourceMappingURL=styles.css.map */
