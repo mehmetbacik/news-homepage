@@ -332,4 +332,21 @@ html body {
   br.small {
     display: block;
   }
+}
+@media (max-width: 375px) {
+  #news__page main .main__topStories .topStories-content-headline .content-text .title {
+    font-size: 40px;
+  }
+  #news__page main .main__currentNews .currentNews-content-child a {
+    gap: 20px;
+  }
+  #news__page main .main__currentNews .currentNews-content-child a .content-text span {
+    font-size: 20px;
+  }
+  #news__page main .main__currentNews .currentNews-content-child a .content-text h2 {
+    font-size: 15px;
+  }
+  #news__page main .main__currentNews .currentNews-content-child a .content-text p {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=styles.css.map */
