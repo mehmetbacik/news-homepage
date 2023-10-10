@@ -220,7 +220,7 @@ html {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
     br {
         &.xlarge {
             display: block;
@@ -237,7 +237,7 @@ html {
     }
 }
 
-@media screen and (min-width: 992px) and (max-width:1199px) {
+@media screen and (min-width: 993px) and (max-width:1200px) {
     #news__page {
         main {
             .main__topStories {
@@ -298,7 +298,7 @@ html {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width:991px) {
+@media screen and (min-width: 769px) and (max-width:992px) {
     #news__page {
         header {
             .navbar {
@@ -364,7 +364,7 @@ html {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     #news__page {
         header {
             .navbar {
@@ -383,10 +383,11 @@ html {
                 #navbarNav {
                     justify-content: flex-end;
                     .navbar-nav {
-                        gap: 20px;
+                        gap: 8px;
                         .nav-item {
                             .nav-link {
-                                color: $dark-grayish-blue;
+                                color: $very-dark-blue;
+                                font-size: 18px;
                                 font-weight: 500;
                                 &:hover {
                                     color: $soft-red;
@@ -484,29 +485,33 @@ html {
 /*DevNot: Check - Menu*/
 @media (max-width: 768px) {
     .navbar-collapse {
+        display: flex;
         position: absolute;
         z-index: 2;
-        background-color: $off-white;
         top: -25px;
-        left: 0;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
+        right: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.71);
         padding: 0px;
-        display: flex;
         min-height: 100vh;
     }
     .navbar-nav {
+        padding: 30px 25px;
         background-color: $off-white;
         min-height: 100vh;
+        width: calc(100% - 120px);
+    }
+    .navbar-close {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 45px;
+        padding: 0;
     }
     .navbar-close-icon::before {
         content: url(/assets/img/icon-menu-close.svg);
     }
     .navbar-collapse.collapsing {
-        height: auto;
         -webkit-transition: right 0.3s ease;
         -o-transition: right 0.3s ease;
         -moz-transition: right 0.3s ease;
@@ -514,7 +519,7 @@ html {
         right: -100%;
     }
     .navbar-collapse.show {
-        left: 0;
+        right: 0;
         -webkit-transition: right 0.3s ease-in;
         -o-transition: right 0.3s ease-in;
         -moz-transition: right 0.3s ease-in;
