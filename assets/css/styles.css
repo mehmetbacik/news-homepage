@@ -323,9 +323,9 @@ html body {
   }
   .navbar-collapse {
     display: flex;
-    position: absolute;
+    position: fixed;
     z-index: 2;
-    top: -25px;
+    top: 0px;
     right: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.71);
