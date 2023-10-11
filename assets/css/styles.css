@@ -10,6 +10,7 @@ html body {
   max-height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: hsl(36, 100%, 99%);
 }
 
 #news__page header .navbar {
